@@ -1,44 +1,36 @@
-*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package spark;
+package spark2.pkg0;
 
 /**
  *
- * @author bqw5233
+ * @author brend
  */
 public class User {
     
-    private String username;
+    private String userName;
     private String password;
     
-    public User(String newUsername, String newPassword){
-        this.username = newUsername;
-        this.password = newPassword;
-    }
-    
-    public boolean authenticate(String theUsername, String thePassword){
-        if (theUsername.equals(this.username) && thePassword.equals(this.password)){
-            return true;
-        }
-        
-        return false;
+    public User(String theUserName, String thePassword){
+        userName = theUserName;
+        password = thePassword;
     }
 
     /**
-     * @return the username
+     * @return the userName
      */
-    public String getUsername() {
-        return username;
+    public String getUserName() {
+        return userName;
     }
 
     /**
-     * @param username the username to set
+     * @param userName the userName to set
      */
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
     /**
@@ -54,7 +46,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
     
 }
